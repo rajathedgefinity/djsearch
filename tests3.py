@@ -6,5 +6,7 @@ s3 = boto3.resource(
     aws_access_key_id='AKIA6RBMXR2AFQYQ3REQ',
     aws_secret_access_key='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'
 )
+
 content="String content to write to a new S3 file"
 s3.Object('fueb-analitics', 'newfile.txt').put(Body=content)
+s3.
